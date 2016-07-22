@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_update_dlg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape_dlg_bg"
+    android:gravity="center" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="发现新版本"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#00ccff" />
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="10dp"
+        android:background="#00ccff"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:text="更新内容"
+            android:textSize="14sp" />
+    </ScrollView>
+    
+    <LinearLayout 
+        android:id="@+id/ll_update_btn_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="立即更新"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_download_btn"
+            />
+        
+        <Button 
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="下次再说"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_nexttime_btn"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_install_btn_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone">
+        
+        <Button 
+            android:id="@+id/btn_install"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="立即安装"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_download_btn"
+            />
+    </LinearLayout>
+
+</LinearLayout>
