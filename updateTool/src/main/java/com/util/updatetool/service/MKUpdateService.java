@@ -73,7 +73,8 @@ public class MKUpdateService extends Service {
         ntfBuilder.setOngoing(true);
         ntfBuilder.setAutoCancel(true);
         ntfBuilder.setNumber(0);
-    	ntfBuilder.setDefaults(-1);
+        ntfBuilder.setVibrate(null);
+//    	ntfBuilder.setDefaults(-1);
     }
 
     private void startThread() {
